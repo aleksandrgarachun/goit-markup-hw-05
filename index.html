@@ -59,7 +59,9 @@
           <h1 class="order-title">
             Effective Solutions<br />for Your Business
           </h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button type="button" class="order-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!--description 2-->
@@ -557,5 +559,23 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal></div>
+    <div class="modal">
+      <button class="modal-close" type="button" data-modal-close>x</button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe
+        quam commodi cum, dicta debitis modi corrupti consectetur recusandae
+        perferendis doloremque ad veniam fugiat a mollitia velit eveniet
+        corporis quia.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad aut
+        doloremque vero deleniti modi, fugiat expedita! Minima ratione optio
+        commodi accusantium mollitia? Nihil earum sint odio beatae enim ea.
+      </p>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

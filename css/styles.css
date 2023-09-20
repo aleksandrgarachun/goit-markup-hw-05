@@ -487,3 +487,28 @@ h1 {
 .icon-footer {
     fill: var(--color-paragraph-footer);
 }
+
+/* Modal*/
+.backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    background-color: rgba(46, 47, 66, 0.40);
+    align-items: center;
+    justify-content: center;
+}
+.is-hidden {
+    display: none;
+}
+.modal {
+    position: relative;
+    background-color: #FCFCFC;
+    border-radius: 4px;
+    width: 408px;
+    padding: 24px;
+}
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
