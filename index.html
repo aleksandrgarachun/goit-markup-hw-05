@@ -560,20 +560,89 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal></div>
-    <div class="modal">
-      <button class="modal-close" type="button" data-modal-close>x</button>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe
-        quam commodi cum, dicta debitis modi corrupti consectetur recusandae
-        perferendis doloremque ad veniam fugiat a mollitia velit eveniet
-        corporis quia.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ad aut
-        doloremque vero deleniti modi, fugiat expedita! Minima ratione optio
-        commodi accusantium mollitia? Nihil earum sint odio beatae enim ea.
-      </p>
+    <!-- Modal-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>
+          <svg class="icon-close" height="8" width="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="paragraph-modal">
+          Leave your contacts and we will call you back
+        </p>
+        <form name="contact-form">
+          <div class="form-name">
+            <label class="label-name" for="user-name">Name</label>
+          </div>
+          <div class="modal-phone">
+            <input
+              id="user-name"
+              name="user-name"
+              type="text"
+              class="input-phone"
+            />
+            <svg width="18" height="24" class="icon-modal">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <div class="form-name">
+            <label class="label-name" for="user-name">Phone</label>
+          </div>
+          <div class="modal-phone">
+            <input
+              id="user-name"
+              name="user-tel"
+              type="tel"
+              class="input-phone"
+            />
+            <svg width="18" height="24" class="icon-modal">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <div class="form-name">
+            <label class="label-name" for="user-name">Email</label>
+          </div>
+          <div class="modal-phone">
+            <input
+              id="user-name"
+              name="user-email"
+              type="email"
+              class="input-phone"
+            />
+            <svg width="18" height="24" class="icon-modal">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <div class="form-comment">
+            <label class="label-name" for="user-comment">Comment</label>
+            <textarea
+              id="user-comment"
+              name="user-comment "
+              placeholder="Text input"
+              class="textarea-comment"
+            >
+            </textarea>
+          </div>
+
+          <div class="user-privacy">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="visually-hidden"
+            />
+            <label for="user-privacy" class="label-usr-privacy"
+              >I accept the terms and conditions of the
+              <span class="span-usr-privacy">Privacy Policy</span></label
+            >
+          </div>
+        </form>
+      </div>
     </div>
 
     <script src="./js/modal.js"></script>
