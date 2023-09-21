@@ -704,7 +704,7 @@ input[type="checkbox"] {
 
 }
 
-.textarea-comment:focus + .label-name{
+.textarea-comment:focus{
     border-color: #4D5AE5;
 }
 
