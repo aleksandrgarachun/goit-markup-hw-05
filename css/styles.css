@@ -45,6 +45,9 @@ h1 {
     margin: 0 auto;
 
 }
+input[type="checkbox"] {
+    display: none;
+}
 
 
 /* header */
@@ -635,6 +638,7 @@ h1 {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
+
 .textarea-comment:focus {
     border-color: #4D5AE5;
 }
@@ -667,16 +671,11 @@ h1 {
 .modal-privacy-check {
     border: none;
 }
-input[type="checkbox"]:checked+.span-usr-privacy {
+.check-input:checked+.label-usr-privacy .span-usr-privacy {
     background-color: var(--color-span);
     border: none;
     fill: var(--color-paragraph-footer);
 }
-/*.visually-hidden:checked+.span-usr-privacy {
-    background-color: var(--color-span);
-    border: none;
-}*/
-
 
 .privacy-link {
     color: var(--color-link-team);
