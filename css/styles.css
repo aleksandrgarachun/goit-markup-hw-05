@@ -606,27 +606,24 @@ input[type="checkbox"] {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close:hover .icon-close {
+.modal-close:hover,
+.modal-close:focus {
     background-color: #404bbf;
     border: none;
+    /*fill: #ffffff;*/
+    
+}
+
+.modal-close:focus + .icon-close {
     fill: #ffffff;
 }
-.modal-close:focus .icon-close{
-    background-color: #404bbf;
-    border: none;
-    fill: #ffffff; 
+.modal-close:hover + .icon-close {
+    fill: #ffffff;
 }
 .icon-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/*
-.icon-close:hover,
-.icon-close:focus {
-    fill: #ffffff;
-    background-color: #404bbf;
-    border: none;
-}
-*/
+
 .paragraph-modal {
     font-size: 16px;
     font-weight: 500;
