@@ -48,7 +48,9 @@ h1 {
 input[type="checkbox"] {
     display: none;
 }
-
+textarea {
+    display: block;
+}
 
 /* header */
 .header {
@@ -697,7 +699,7 @@ input[type="checkbox"] {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
+    
 }
 
 .textarea-comment:focus{
